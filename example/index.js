@@ -1,8 +1,3 @@
-# worker_manager
- Sending messages between threads based on the cluster libraries and promise
-
-File: index.js
-
 var cluster = require('cluster');
 var WorkerManager = require('./worker_manager').master(cluster);
 
@@ -36,14 +31,3 @@ Promise.all(taskList)
 		
 		process.exit(0);
 	});
-
-File: worker.js
-
-var WorkerManager = require('./worker_manager').slave();
-
-WorkerManager.receive('hello', function(num){
-	return new Promise(function(resolve, reject){
-		resolve(num*5);
-	});
-});
-

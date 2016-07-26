@@ -1,11 +1,22 @@
 {
   "name": "worker_manager",
   "version": "1.0.0",
-  "description": "",
+  "description": "Sending messages between threads based on the cluster libraries and promise",
   "main": "WorkerManager.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "ferrumfist",
-  "license": "ISC"
+  "license": "ISC",
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ferrumfist/worker_manager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ferrumfist/worker_manager/issues"
+  },
+  "homepage": "https://github.com/ferrumfist/worker_manager#readme"
 }
